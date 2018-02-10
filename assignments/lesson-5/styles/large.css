@@ -1,7 +1,7 @@
 @media only screen and (min-width: 64em) {
     main figure image {
         width: 100%;
-        margin: 2em;
+        margin: 2em 2em 2em 0;
     }
      {
         margin: 2em;
