@@ -1,0 +1,24 @@
+@media only screen and (min-width: 64em) {
+    main figure.franklinmain img {
+        width: 100%;
+        margin: 2em 2em 2em 0;
+    }
+     {
+        margin: 2em;
+    }
+    .highlow, .current, .conditions {
+        display: inline-block;
+        width: 250px;
+        height: 50px;
+        margin: 2em;
+    }
+    section.forecast {
+        clear: left;
+    }
+
+    /* Only CSS rules that need to be changed to meet the layout needs from medium to large/wide go in here */
+    article p.town-article img {
+        width: 29.333%;
+    }
+
+}

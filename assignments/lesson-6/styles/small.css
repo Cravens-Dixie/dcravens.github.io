@@ -33,10 +33,14 @@ header {
 header h1 {
     color: #dc7928;
 }
-
-header img {
-    width: auto;
+header figure.logo {
+    float: left;
+    margin: 0 2% 0 0;
 }
+
+/*header img {
+    width: auto;
+}*/
 
 header .subheading {
     color: #4b666e;
@@ -65,37 +69,34 @@ main h2 {
     font-size: 1.5em;
 }
 
-main figure {
+main figure.franklinmain {
     margin: 0 0 .2rem 2%;
-    width: 96%;
-
-}
-
-main figure img {
     width: 100%;
-}
-/*Photo by Lukas Kloeppel from Pexels https://www.pexels.com/photo/clouds-dawn-dusk-forest-545968/*/
-section {
 
 }
-section h3 {
-    color: #122034;
-    font-size: 1.25em;
+
+main figure.franklinmain img {
+    width: 100%;
 }
 section.forecast {
     display: none;
 }
-table, th, td {
+section.forcast h3 {
+    color: #122034;
+    font-size: 1.25em;
+}
+
+section.forecast th, td {
     border: 1px solid #122034;
 
 }
-table {
+section.forecast table {
     width: 100%;
 }
-th {
+section.forecast table th {
     height: 50px;
 }
-tbody tr {
+section.forecast table tbody tr {
     background-color: #f2f2f2;
 }
 
@@ -129,3 +130,10 @@ footer > p {
 /* This structure refers to p elements that are direct children of the footer element */
 
 /* Other Class Selectors */
+
+/*-- Clearfix --*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
