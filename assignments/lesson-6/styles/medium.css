@@ -1,15 +1,23 @@
 @media only screen and (min-width: 37.5em) {
     /* Only CSS rules that need to be changed to meet the layout needs from small to medium go in here */
+    header figure.logo {
+        float: left;
+    }
+    nav {
+       position: static;
+    }
     nav button {
         display: none;
     }
     nav ul {
         list-style-type: none;
         margin: 0;
+        margin-left: 2%;
         padding: 0;
         overflow: hidden;
         background-color: #c32439;
     }
+    nav ul.hide {display: block;}
 
     nav ul li {
         float: left;
@@ -17,9 +25,10 @@
 
     nav ul li a {
         display: block;
+        border: none;
         color: white;
         text-align: center;
-        padding: 14px 16px;
+        padding: .8rem 1rem;
         text-decoration: none;
     }
     /* Change the link color to #111 (black) on hover */
@@ -34,13 +43,14 @@ main figure img {
     width: 50%;
     margin: 0 2em 2em 0;
 }
-    section.forecast {
-        clear: left;
-        display: block;
-        border: 1px solid #4b666e;
-        background-color: #d2ddd8;
+ #forecast {
+    clear: left;
+    display: block;
+     border: 1px solid #4b666e;
+     background-color: #d2ddd8;
 
-    }
+}
+
 
     /* show the 10-day forecast with the medium view and up */
     article p.town-article img {
@@ -48,4 +58,11 @@ main figure img {
         float: right;
     }
     /* responsive images */
+
+
+/*-- Clearfix --*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }

@@ -26,16 +26,17 @@ footer {
 
 header {
     font-family: 'Libre Baskerville', serif;
-    font-size: 2em;
+    font-size: 1em;
+    margin: 0 2%;
 
 }
 
 header h1 {
     color: #dc7928;
+    margin: 2%;
 }
 header figure.logo {
-    float: left;
-    margin: 0 2% 0 0;
+    margin: 2%;
 }
 
 /*header img {
@@ -45,32 +46,58 @@ header figure.logo {
 header .subheading {
     color: #4b666e;
     font-family: 'Roboto', sans-serif;
-    font-size: 1.25em;
+    font-size: .8em;
+    margin: 0;
+    padding: 0;
 }
 
-nav {}
+nav {
+  position: absolute; top: 0rem;right: 0rem;
+    background-color: #c32439;
+    font-family: 'Roboto', sans-serif;
+}
 
-nav button {}
+nav button {
 
-nav ul {}
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
 
 nav ul li {}
 
-nav ul li a {}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
 
-nav ul li.active a {}
 
-nav ul li a:hover {}
+}
+
+nav ul li.active a {
+   background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hide {display: none;}
 
 main {}
 
-main h2 {
-    color: #122034;
-    font-size: 1.5em;
-}
-
 main figure.franklinmain {
-    margin: 0 0 .2rem 2%;
+    margin: 0 0 0 2%;
     width: 100%;
 
 }
@@ -78,25 +105,35 @@ main figure.franklinmain {
 main figure.franklinmain img {
     width: 100%;
 }
-section.forecast {
+main h2 {
+    color: #122034;
+    font-size: 1.5em;
+}
+main section.summary {
+
+}
+main section.summary h3{
+
+}
+#forecast {
     display: none;
 }
-section.forcast h3 {
+#forecast h3 {
     color: #122034;
     font-size: 1.25em;
 }
 
-section.forecast th, td {
+#forecast th, td {
     border: 1px solid #122034;
 
 }
-section.forecast table {
+#forecast table {
     width: 100%;
 }
-section.forecast table th {
+#forecast table th {
     height: 50px;
 }
-section.forecast table tbody tr {
+#forecast table tbody tr {
     background-color: #f2f2f2;
 }
 

@@ -34,7 +34,7 @@
     <!-- site navigation use placeholder references -->
     <nav>
         <button onclick="toggleNavMenu()">&#9776;</button>
-        <ul>
+        <ul id="navigation" class="hide">
             <li><a href="#">Home</a></li>
             <li class="active"><a href="#">Franklin</a></li>
             <li><a href="#">Greenville</a></li>
@@ -45,13 +45,14 @@
     </nav>
 
     <main>
-        <h2>The City of Franklin</h2>
         <figure class="franklinmain">
-            <img src="images/franklin-original-crop.jpg" alt="Franklin, TN" sizes="100vw"
+        <img src="images/franklin-original-crop.jpg" alt="Franklin, TN" sizes="100vw"
                  srcset="images/franklin-small-ps6.jpg 400w,
                          images/franklin-medium-ps6.jpg 800w,
                          images/franklin-large-ps6.jpg 1200w,">
         </figure>
+        <h2>The City of Franklin</h2>
+
         <section class="summary">
             <h3>Weather Summary</h3>
             <div class="highlow">
@@ -61,7 +62,7 @@
             <div class="current">
                 Sunny
                 <picture>
-                    <img src="images/CIT230-ETA-weather-sun.png" alt="Sunny" width="40px" height="40px">
+                    <img src="images/Sunicon-1.png" alt="Sunny" srcset="images/Sunicon-1.png 1x, images/sunicon-2.png 2x, images/sunicon-3.png 3x" >
                 </picture>
             </div>
             <div class="conditions">
@@ -70,7 +71,7 @@
             </div>
         </section>
 
-        <section class="forecast">
+        <section id="forecast">
             <h3>10 Day Forecast</h3>
             <table>
                 <thead>
@@ -129,7 +130,7 @@
                 999-999-9999<br>
                 contact@theurl.com</p>
         </aside>
-        <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span src="scripts/currentdate.js" id="currentdate"></span></p>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate"></span></p>
     </footer>
 
     <script src="scripts/hamburger.js"></script>
