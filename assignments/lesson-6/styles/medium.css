@@ -37,14 +37,24 @@
     }
     /* hamburger button does not need to be shown */
 
+    main h2 {
+        float: right;
+        width: auto;
     }
-main figure img {
+    main section.summary {
+        float: right;
+        width: 47%;
+    }
+    main figure.franklinmain img {
+    clear: right;
    float: left;
-    width: 50%;
-    margin: 0 2em 2em 0;
+    width: 48%;
+    margin: 0;
 }
+
+
  #forecast {
-    clear: left;
+    clear: right;
     display: block;
      border: 1px solid #4b666e;
      background-color: #d2ddd8;
@@ -58,7 +68,7 @@ main figure img {
         float: right;
     }
     /* responsive images */
-
+}
 
 /*-- Clearfix --*/
 .clearfix:after {

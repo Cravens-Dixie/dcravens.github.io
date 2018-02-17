@@ -108,8 +108,12 @@ main figure.franklinmain img {
 main h2 {
     color: #122034;
     font-size: 1.5em;
+    margin: 0;
 }
 main section.summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
 
 }
 main section.summary h3{
@@ -137,10 +141,8 @@ main section.summary h3{
     background-color: #f2f2f2;
 }
 
-
+/* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
 article p.town-article img {
-    float: right;
-    /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
     width: 100%;
     /* fill the page in the small/phone view */
     margin: 0 2em 2em;
