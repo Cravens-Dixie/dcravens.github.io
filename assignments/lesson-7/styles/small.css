@@ -1,0 +1,186 @@
+/* This main css file contains the default rules and is geared toward the small/phone view */
+
+* {
+    box-sizing: border-box;
+}
+
+/* This wildcard applies to all elements ensuring a box layout model */
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    /*font-family: 'Libre Baskerville', serif;*/
+    /* Declare the base font-family - from google font api or other */
+}
+
+header,
+nav,
+main,
+footer {
+    text-align: center;
+    width: auto;
+    margin: 2em;
+    /* the comma means apply the following CSS declarations to all of the listed elements */
+    /* Declare the maximum width and other main element rules to limit the stretch on wide views */
+}
+
+header {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1em;
+    margin: 0 2%;
+
+}
+
+header h1 {
+    color: #dc7928;
+    margin: 2%;
+}
+header figure.logo {
+    margin: 2%;
+}
+
+/*header img {
+    width: auto;
+}*/
+
+header .subheading {
+    color: #4b666e;
+    font-family: 'Roboto', sans-serif;
+    font-size: .8em;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+  position: absolute; top: 0rem;right: 0rem;
+    background-color: #c32439;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav button {
+
+    margin: .2rem 2%;
+    background-color: transparent;
+    border: none;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {}
+
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: rgba(255,255,255,0.8);
+    border-top: 1px solid rgba(0,0,0,0.3);
+
+
+}
+
+nav ul li.active a {
+   background-color: rgba(0,0,0,0.2);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hide {display: none;}
+
+ div#gallery {
+    display: grid;
+    grid-template-columns: auto;
+     grid-gap: 1em 1em;
+    justify-content: center;
+
+}
+
+
+
+main figure.franklinmain {
+    margin: 0 0 0 2%;
+    width: 100%;
+
+}
+
+main figure.franklinmain img {
+    width: 100%;
+}
+main h2 {
+    color: #122034;
+    font-size: 1.5em;
+    margin: 0;
+}
+main section.summary {
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+}
+main section.summary h3{
+
+}
+#forecast {
+    display: none;
+}
+#forecast h3 {
+    color: #122034;
+    font-size: 1.25em;
+}
+
+#forecast th, td {
+    border: 1px solid #122034;
+
+}
+#forecast table {
+    width: 100%;
+}
+#forecast table th {
+    height: 50px;
+}
+#forecast table tbody tr {
+    background-color: #f2f2f2;
+}
+
+/* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.town-article img {
+    width: 100%;
+    /* fill the page in the small/phone view */
+    margin: 0 2em 2em;
+}
+article {
+    overflow: auto;
+}
+
+footer {
+
+    background-color: #4b666e;
+    margin: 2em;
+
+}
+
+footer aside {
+    color: azure
+}
+
+footer > p {
+    color: azure
+}
+
+/* This structure refers to p elements that are direct children of the footer element */
+
+/* Other Class Selectors */
+
+/*-- Clearfix --*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
