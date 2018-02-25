@@ -28,6 +28,3 @@ month[11] = "December";
 
 
 document.getElementById("currentdate").innerHTML = weekday[myDate.getDay()] +", " + myDate.getDate() + " " + month[myDate.getMonth()] + " " + myDate.getFullYear();
-
-
-

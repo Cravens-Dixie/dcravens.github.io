@@ -44,8 +44,10 @@
     /* hamburger button does not need to be shown */
     div#gallery {
         display: grid;
+        width: 100%;
         grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
+        grid-gap: 1em;
+        /*justify-content: center;*/
     }
 
     main h2 {
