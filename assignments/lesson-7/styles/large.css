@@ -38,7 +38,7 @@
         grid-gap: 1em;
         /*justify-content: center;*/
     }
-    div#gallery picture:hover {
+    div#gallery figure img:hover {
         box-shadow: 5px 5px 10px gray;
     }
 
