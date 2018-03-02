@@ -173,7 +173,57 @@ footer > p {
     color: azure
 }
 
-/* This structure refers to p elements that are direct children of the footer element */
+/*-----------------------------------------Form Styles------------------------------------------------------ */
+form#reporter {
+    margin: 1em, 3%;
+}
+fieldset {
+    background-color: #d2ddd8;
+    border: #4b666e solid 1px;
+    margin: 1em;
+    border-radius: .8em;
+}
+legend {
+    color: #dc7928;
+    margin-left: 8%;
+    padding: .5em;
+    border: #4b666e solid 1px;
+    background-color: #d2ddd8;
+    border-radius: .4em;
+}
+label {
+    display: block;
+
+    margin: 1em;
+    text-align: left;
+}
+label span {
+    display: block;
+
+    font-size: .8em;
+    color: #122034;
+    padding-top: 1em;
+    padding-bottom: .3em;
+    text-align: left;
+}
+label span input.radio {
+   text-align: left;
+}
+span#ratingvalue {
+    margin-left: 4em;
+}
+input.submitButton {
+    -webkit-appearance: none;
+    color: white;
+    border: solid 1px #122034;
+    border-radius: 5px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .4em;
+    background: #c32439;
+    box-shadow: 4px 4px 10px #122034;
+}
 
 /* Other Class Selectors */
 

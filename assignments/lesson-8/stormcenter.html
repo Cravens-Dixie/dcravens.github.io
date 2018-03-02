@@ -46,14 +46,14 @@
 
         <main>
             <p>Progress:<progress value="3" max="5"></progress></p>
-            <form action="" method="post" enctype="multipart/form-data" name="stormreport" id="reporter">
+            <form action="thanks.html" target="_blank" method="post" enctype="multipart/form-data" name="stormreport" id="reporter">
                 <fieldset class="personal">
                     <legend>Personal Information</legend>
-                    <label><span>Full name:</span><input name="fullname" type="text" value="" placeholder="Full name" pattern="[a-zA-Z]{5, 99} required"></label>
+                    <label><span>Full name:</span><input name="fullname" type="text" value="" placeholder="Full name" pattern="[a-zA-Z]{5,}" required></label>
 
                 <label><span>Email:</span><input name="email" type="email" value="" placeholder="Anybody@gmail.com"></label>
 
-                <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="8885551234" pattern="[0-9]{10, 20}" required></label>
+                <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="8885551234" pattern="[0-9]{10,20}" required></label>
 
                 <label><span>Zip code:</span><input name="zipcode" type="number" placeholder="37931" required></label>
                 </fieldset>
@@ -69,8 +69,9 @@
                     <option value="Tornado"></option>
                     </datalist>
                     </label>
-                <label><span>Storm severity rating (1-10):</span><input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1"
-                                                                 oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <label><span>Storm severity rating (1-10):</span><input name="severity" type="range" id="rating"             value="5" min="1" max="10" step="1"
+                      oninput="adjustRating(this.value)"
+                     onchange="adjustRating(this.value)">
                     <span id="ratingvalue">5</span>
                 </label>
                 <label><span>Storm region:</span><select name="region">
@@ -80,13 +81,14 @@
                     <option value="Springfield">Springfield</option>
                     </select></label>
                 <label><span>User in danger:</span></label>
-                    <input name="yes" type="radio" value="yes">Yes<br>
-                    <input name="maybe" type="radio" value="maybe">Maybe<br>
-                    <input name="no" type="radio" value="no" checked>No
-                <label><span>Additional information:<textarea name="message" placeholder="optional" rows="15" cols="30"></textarea></span></label>
+                    <input name="yes" type="radio" value="yes" class="radio"><span>Yes</span><br>
+                    <input name="maybe" type="radio" value="maybe" class="radio"><span>Maybe</span><br>
+                    <input name="no" type="radio" value="no" class="radio" checked><span>No</span>
+                 <label><span>Additional information:</span><textarea name="message" placeholder="optional" rows="15" cols="30"></textarea></label>
                 </fieldset>
 
-                <input name="submitButton" type="submit">
+                <input name="submitButton" type="submit" class="submitButton" onclick="thanks.html">
+                <input name="redirect" type="hidden" value="thanks.html">
 
 
             </form>
@@ -101,7 +103,7 @@
                     999-999-9999<br>
                     contact@theurl.com</p>
             </aside>
-            <p class="footer-bar">&copy;2017 All Rights Reserved | Site Title | <span id="currentdate"></span></p>
+            <p class="footer-bar">&copy;2017 All Rights Reserved | ETA Weather | <span id="currentdate"></span></p>
         </footer>
 
         <script src="scripts/hamburger.js"></script>
