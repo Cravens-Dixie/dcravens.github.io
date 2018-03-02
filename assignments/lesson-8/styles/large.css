@@ -1,0 +1,54 @@
+@media only screen and (min-width: 64em) {
+    nav ul li a {padding: .6rem 1rem;}
+
+    main figure.franklinmain img {
+        width: 100%;
+        margin: 2em 2em 2em 0;
+    }
+
+   main h2 {
+       float: none;
+       display: block;
+       width: auto;
+       text-align: center;
+    }
+
+     main section.summary {
+         width: 100%;
+         margin: 0;
+         align-content: center;
+    }
+
+    .highlow, .current, .conditions {
+        display: inline-block;
+        align-content: center;
+        width: 150px;
+        height: 100px;
+        margin: 1em 3em;
+    }
+
+
+
+    article p.town-article img {
+        width: 29.333%;
+    }
+
+    div#gallery {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1em;
+        /*justify-content: center;*/
+    }
+    div#gallery figure img:hover {
+        box-shadow: 5px 5px 10px gray;
+    }
+
+
+}
+/*-- Clearfix --*/
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
