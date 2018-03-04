@@ -198,15 +198,16 @@ label {
 }
 label span {
     display: block;
-
     font-size: .8em;
     color: #122034;
     padding-top: 1em;
     padding-bottom: .3em;
     text-align: left;
 }
-label span input.radio {
+div#radioBut {
+    display: block;
    text-align: left;
+    margin-left: 8%;
 }
 span#ratingvalue {
     margin-left: 4em;

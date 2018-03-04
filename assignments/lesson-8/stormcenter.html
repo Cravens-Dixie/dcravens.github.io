@@ -46,7 +46,7 @@
 
         <main>
             <p>Progress:<progress value="3" max="5"></progress></p>
-            <form action="thanks.html" target="_blank" method="post" enctype="multipart/form-data" name="stormreport" id="reporter">
+            <form action="thanks.html" target="_blank" method="GET" enctype="multipart/form-data" name="stormreport" id="reporter">
                 <fieldset class="personal">
                     <legend>Personal Information</legend>
                     <label><span>Full name:</span><input name="fullname" type="text" value="" placeholder="Full name" pattern="[a-zA-Z]{5,}" required></label>
@@ -81,9 +81,9 @@
                     <option value="Springfield">Springfield</option>
                     </select></label>
                 <label><span>User in danger:</span></label>
-                    <input name="yes" type="radio" value="yes" class="radio"><span>Yes</span><br>
-                    <input name="maybe" type="radio" value="maybe" class="radio"><span>Maybe</span><br>
-                    <input name="no" type="radio" value="no" class="radio" checked><span>No</span>
+                    <div id="radioBut"><input type="radio" name="danger" value="yes" class="radio"><span>Yes</span><br>
+                                        <input type="radio" name="danger" value="maybe" class="radio"><span>Maybe</span><br>
+                                        <input type="radio" name="danger" value="no" class="radio" checked><span>No</span></div>
                  <label><span>Additional information:</span><textarea name="message" placeholder="optional" rows="15" cols="30"></textarea></label>
                 </fieldset>
 
