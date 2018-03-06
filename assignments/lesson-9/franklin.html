@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>East Tennessee Accurate Weather</title>
+    <meta name="author" content="Dixie Cravens">
+    <meta name="description" content="East TN weather and community information">
+    <!-- external style references in the proper cascading order -->
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:bold|Roboto:light" rel="stylesheet">
+    <!-- Google API font reference -->
+    <link href="styles/normalize.css" rel="stylesheet">
+    <!-- normalize useragent/browser defaults -->
+    <link href="styles/small.css" rel="stylesheet">
+    <!-- default styles - small/phone views -->
+    <link href="styles/medium.css" rel="stylesheet">
+    <!-- medium/tablet views -->
+    <link href="styles/large.css" rel="stylesheet">
+    <!-- large/wide/desktop views -->
+</head>
+
+<body>
+
+    <header class="clearfix">
+        <figure class="logo">
+        <img src="images/-weather-logo.png" alt="logo" srcset="images/-weather-logo.png 1x, images/weather-logo-2.png 2x, images/weather-logo-3.png 3x">
+        </figure>
+
+        <h1>East Tennessee Accurate Weather</h1>
+        <div class="subheading">The RIGHT information, RIGHT now.</div>
+    </header>
+
+    <!-- site navigation use placeholder references -->
+    <nav class="mainNav">
+        <button onclick="toggleNavMenu()">&#9776;</button>
+        <ul id="navigation" class="hide">
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="#">Franklin</a></li>
+            <li><a href="#">Greenville</a></li>
+            <li><a href="#">Springfield</a></li>
+            <li><a href="stormcenter.html">Storm Center</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <figure class="franklinmain">
+        <img src="images/franklin-original-crop.jpg" alt="Franklin, TN" sizes="100vw"
+                 srcset="images/franklin-small-ps6.jpg 400w,
+                         images/franklin-med-alt-400.jpg 800w,
+                         images/franklin-large-ps6.jpg 1200w">
+        </figure>
+        <h2>The City of Franklin</h2>
+
+        <section class="summary">
+            <h3>Weather Summary</h3>
+            <div class="highlow">
+                <p>High: <span id="tempHi">90</span>°F</p>
+                <p>Low: <span id="tempLo">66</span>°F</p>
+            </div>
+            <div class="current">
+                Sunny
+                <picture>
+                    <img src="images/Sunicon-1.png" alt="Sunny" srcset="images/Sunicon-1.png 1x, images/sunicon-2.png 2x, images/sunicon-3.png 3x" >
+                </picture>
+            </div>
+            <div class="conditions">
+                <p>Precipitation: 0%</p>
+                <p>Wind Speed: <span id="windSp">5</span> mph SW</p>
+                <p>Wind Chill: <span id="windchill"></span></p>
+            </div>
+
+<!--
+            <div onload="windChill()" src="scripts/windchill.js">
+
+                <p id="windch">YOU ARE HERE</p>
+            </div>
+-->
+        </section>
+
+        <section id="forecast">
+            <h3>10 Day Forecast</h3>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day 1</th>
+                        <th>Day 2</th>
+                        <th>Day 3</th>
+                        <th>Day 4</th>
+                        <th>Day 5</th>
+                        <th>Day 6</th>
+                        <th>Day 7</th>
+                        <th>Day 8</th>
+                        <th>Day 9</th>
+                        <th>Day 10</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>89&deg;F</td>
+                        <td>87&deg;F</td>
+                        <td>78&deg;F</td>
+                        <td>75&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>72&deg;F</td>
+                        <td>79&deg;F</td>
+                        <td>83&deg;F</td>
+                        <td>85&deg;F</td>
+                        <td>89&deg;F</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <article>
+            <h3>Franklin Breaks Record</h3>
+            <p class="town-article">
+                <img src="images/pexels-photo-break-record-400.jpg" alt="downtown Franklin"> Solar Eclipse!
+                Businesses statewide are preparing for the massive influx of visitors that the once-in-a-lifetime solar eclipse will bring to Tennessee this month.
+
+                With Tennessee tourism officials estimating as many as 1.4 million visitors coming to see the eclipse, up to 200,000 will travel to Franklin to spend nearly two-and-a-half minutes in the path of the eclipse on Aug. 21.
+
+                The 2,700 hotel rooms in Montgomery County are nearly booked, homeowners are renting out houses and rooms and campsites are entirely sold out. Local venues – a vineyard and a distillery – are hosting viewing parties that feature eclipse-themed brews as collectors’ items and food trucks are prepping menus.
+
+                The total eclipse band stretches through Middle and East Tennessee. Clarksville, Portland, Hendersonville, Nashville, Gallatin, Franklin and Cleveland each reside in its path, providing an economic boost to those cities and small towns as well as to the larger cities just beyond the band – Knoxville and Chattanooga – that benefit from proximity.
+            </p>
+        </article>
+
+    </main>
+
+    <footer>
+        <aside>
+            <h4>Contact Us!</h4>
+            <p>East Tennessee Accurate Weather<br>
+                123 Main Street<br>
+                Knoxville, TN 37920<br>
+                999-999-9999<br>
+                contact@theurl.com</p>
+        </aside>
+        <p class="footer-bar">&copy;2017 All Rights Reserved | ETA Weather | <span id="currentdate"></span></p>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+    <script src="scripts/currentdate.js"></script>
+    <script src="scripts/windchill.js"></script>
+
+</body>
+
+</html>
