@@ -126,6 +126,26 @@ main section.summary {
 main section.summary h3{
 
 }
+section.threetowns article {
+    background-color: #d2ddd8;
+    border: 1px solid #122034;
+    margin: .3em;
+    width: 31%;
+    float: left;
+    text-align: center;
+}
+section.threetowns h2 {
+    clear: right;
+   margin: 0 auto;
+    padding: .5em;
+   text-align: center;
+
+
+}
+section.threetowns p {
+    margin: 1em .5em;
+    padding: .2em;
+}
 #forecast {
     display: none;
 }
@@ -157,7 +177,11 @@ article p.town-article img {
 article {
     overflow: auto;
 }
-
+footer.clearfix {
+    content: "";
+    display: table;
+    clear: both;
+}
 footer {
 
     background-color: #4b666e;
