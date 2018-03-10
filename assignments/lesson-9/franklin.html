@@ -56,27 +56,22 @@
         <section class="summary">
             <h3>Weather Summary</h3>
             <div class="highlow">
-                <p>High: <span id="tempHi">90</span>°F</p>
-                <p>Low: <span id="tempLo">66</span>°F</p>
+                <p>Current Temperature: <span id="tempHi"></span>°F</p>
+
             </div>
             <div class="current">
-                Sunny
-                <picture>
-                    <img src="images/Sunicon-1.png" alt="Sunny" srcset="images/Sunicon-1.png 1x, images/sunicon-2.png 2x, images/sunicon-3.png 3x" >
-                </picture>
+                <p id="currentconditions">Sunny</p>
+                <img src="" alt="current weather" id="weather_icon">
             </div>
+
             <div class="conditions">
-                <p>Precipitation: 0%</p>
-                <p>Wind Speed: <span id="windSp">5</span> mph SW</p>
-                <p>Wind Chill: <span id="windchill"></span></p>
+                <p>Precipitation: <span id="precip"></span></p>
+                <p>Wind Speed: <span id="windSp"></span> mph</p>
+                <p>Wind Chill: <span id="windchill"></span>&deg;F</p>
+                <p>Forecast: <span id="frcst"></span></p>
             </div>
 
-<!--
-            <div onload="windChill()" src="scripts/windchill.js">
 
-                <p id="windch">YOU ARE HERE</p>
-            </div>
--->
         </section>
 
         <section id="forecast">
@@ -143,6 +138,7 @@
 
     <script src="scripts/hamburger.js"></script>
     <script src="scripts/currentdate.js"></script>
+    <script src="scripts/wu-weather.js"></script>
     <script src="scripts/windchill.js"></script>
 
 </body>

@@ -130,21 +130,27 @@ section.threetowns article {
     background-color: #d2ddd8;
     border: 1px solid #122034;
     margin: .3em;
-    width: 31%;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+
+    /*width: 31%;
     float: left;
-    text-align: center;
+    text-align: center;*/
 }
 section.threetowns h2 {
     clear: right;
-   margin: 0 auto;
-    padding: .5em;
-   text-align: center;
+    text-align: center;
 
 
 }
 section.threetowns p {
-    margin: 1em .5em;
-    padding: .2em;
+   margin: 0;
+    text-align: center;
+
+    line-height: .5em;
 }
 #forecast {
     display: none;
@@ -183,7 +189,7 @@ footer.clearfix {
     clear: both;
 }
 footer {
-
+    width: 97%;
     background-color: #4b666e;
     margin: 2em;
 
