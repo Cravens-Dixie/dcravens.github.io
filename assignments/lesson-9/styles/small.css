@@ -39,9 +39,6 @@ header figure.logo {
     margin: 2%;
 }
 
-/*header img {
-    width: auto;
-}*/
 
 header .subheading {
     color: #4b666e;
@@ -94,16 +91,7 @@ nav ul li a:hover {
 }
 nav ul.hide {display: none;}
 
- div#gallery {
-    display: grid;
-     width: 100%;
-    grid-template-columns: 1fr;
-     grid-gap: 1em;
-    justify-content: center;
-
-}
-
-main figure.franklinmain {
+ main figure.franklinmain {
     margin: 0 0 0 2%;
     width: 100%;
 
@@ -126,6 +114,7 @@ main section.summary {
 main section.summary h3{
 
 }
+/*--------Home Page-------*/
 section.threetowns article {
     background-color: #d2ddd8;
     border: 1px solid #122034;
@@ -136,22 +125,36 @@ section.threetowns article {
     grid-gap: 1em;
     justify-content: center;
 
-    /*width: 31%;
-    float: left;
-    text-align: center;*/
-}
+  }
 section.threetowns h2 {
     clear: right;
     text-align: center;
+    color: #122034;
 
 
 }
 section.threetowns p {
    margin: 0;
     text-align: center;
+    color: #4b666e;
+    line-height: normal;
 
-    line-height: .5em;
 }
+section.threetowns li {
+    justify-content: left;
+    width: 98%;
+    color: #c32439;
+}
+/*----------Gallery Page--------*/
+div#gallery {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr;
+    grid-gap: 1em;
+    justify-content: center;
+
+}
+/*----------10 Day Forecast Table--------*/
 #forecast {
     display: none;
 }
@@ -176,8 +179,8 @@ section.threetowns p {
 
 /* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
 article p.town-article img {
-    width: 100%;
     /* fill the page in the small/phone view */
+    width: 100%;
     margin: 0 2em 2em;
 }
 article {

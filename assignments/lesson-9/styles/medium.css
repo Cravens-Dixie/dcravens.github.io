@@ -6,6 +6,7 @@
     nav {
       position: static;
     }
+    /* hamburger button does not need to be shown */
     nav button {
         display: none;
     }
@@ -41,14 +42,7 @@
     nav ul li a:hover {
         background-color: #122034;
     }
-    /* hamburger button does not need to be shown */
-    div#gallery {
-        display: grid;
-        width: 100%;
-        grid-template-columns: repeat(2, 1fr);
-        grid-gap: 1em;
-        /*justify-content: center;*/
-    }
+
 
     main h2 {
         float: right;
@@ -64,42 +58,57 @@
     width: 48%;
     margin: 0;
 }
+    /*-------Home Page----------*/
+    main #threetown {
+        display: flex;
+        flex-direction: row nowrap;
+        flex-wrap: wrap;
+        margin: auto;
+        justify-content: space-around;
+        align-items: stretch;
+
+    }
     section.threetowns article {
-        clear: right;
-        display: grid;
-        width: 95%;
-        grid-template-columns: 1fr;
-        grid-gap: 1em;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        justify-content: space-around;
+        align-items: stretch;
 
     }
     section.threetowns h2 {
-        display: grid;
-        width: 95%;
-        grid-template-columns: 1fr;
-        grid-gap: 1em;
-        justify-content: center;
+        clear: right;
+        align-items: center;
         color: #122034;
+        width: auto;
     }
     section.threetowns ul {
-        width: 95%;
+        width: auto;
         justify-content: center;
         text-decoration: none;
 
     }
     section.threetowns p {
-       text-align: center;
-        width: 95%;
+        justify-content: center;
+        width: auto;
         color: #4b666e;
+        line-height: normal;
     }
     section.threetowns li {
         justify-content: left;
-        width: 95%;
+        width: auto;
         color: #c32439;
-
-
+    }
+    /*-----Gallery Page-------*/
+    div#gallery {
+        display: grid;
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1em;
+        /*justify-content: center;*/
     }
 
-
+    /* show the 10-day forecast with the medium view and up */
 
  #forecast {
     clear: right;
@@ -110,12 +119,12 @@
 }
 
 
-    /* show the 10-day forecast with the medium view and up */
+    /* responsive images */
     article p.town-article img {
         width: 62.666%;
         float: right;
     }
-    /* responsive images */
+
 }
 
 /*-- Clearfix --*/
