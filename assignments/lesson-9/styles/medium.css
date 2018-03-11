@@ -78,6 +78,7 @@
         grid-template-columns: 1fr;
         grid-gap: 1em;
         justify-content: center;
+        color: #122034;
     }
     section.threetowns ul {
         width: 95%;
@@ -87,10 +88,12 @@
     section.threetowns p {
        text-align: center;
         width: 95%;
+        color: #4b666e;
     }
     section.threetowns li {
         justify-content: center;
         width: 95%;
+        color: #c32439;
 
 
     }
