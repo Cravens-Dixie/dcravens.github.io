@@ -28,6 +28,6 @@ request.onload = function() {
 request2.onload = function() {
     var franklinWeather = JSON.parse(request2.responseText);
     console.log(franklinWeather);
-    document.getElementById("frcst").innerHTML = franklinWeather.forecast.txt_forecast;
+    document.getElementById("frcst").innerHTML = franklinWeather.forecast.txt_forecast.forecastday[0].fcttext;
 
 }

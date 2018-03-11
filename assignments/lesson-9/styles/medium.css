@@ -64,13 +64,35 @@
     width: 48%;
     margin: 0;
 }
-
-    section.threetowns h2 {
+    section.threetowns article {
         clear: right;
+        display: grid;
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        justify-content: center;
+    }
+    section.threetowns h2 {
+        display: grid;
+        width: 95%;
+        grid-template-columns: 1fr;
+        grid-gap: 1em;
+        justify-content: center;
+    }
+    section.threetowns ul {
+        width: 95%;
+        justify-content: center;
 
     }
     section.threetowns p {
        text-align: center;
+        width: 95%;
+    }
+    section.threetowns li {
+        justify-content: center;
+        width: 95%;
+
+
     }
 
 

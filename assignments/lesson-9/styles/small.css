@@ -131,7 +131,7 @@ section.threetowns article {
     border: 1px solid #122034;
     margin: .3em;
     display: grid;
-    width: 100%;
+    width: 95%;
     grid-template-columns: 1fr;
     grid-gap: 1em;
     justify-content: center;
@@ -189,9 +189,11 @@ footer.clearfix {
     clear: both;
 }
 footer {
-    width: 97%;
+    display:flex;
+    width: 95%;
     background-color: #4b666e;
-    margin: 2em;
+    margin: 2em .4em 2em .4em;
+    justify-content: center;
 
 }
 
