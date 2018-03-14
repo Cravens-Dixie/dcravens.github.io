@@ -117,9 +117,12 @@ main section.summary h3{
 /*--------Home Page-------*/
 main#threetown {
     display: grid;
-    width: 95%;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-gap: 1em;
+    margin: .75em;
+
+
 }
 section#threetowns {
     background-color: #d2ddd8;
@@ -140,6 +143,8 @@ section.threetowns p {
     text-align: left;
     color: #4b666e;
     line-height:.8em;
+    padding-left: .2em;
+    padding-right: .2em;
 
 
 }

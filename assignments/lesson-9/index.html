@@ -46,71 +46,31 @@
 
 
         <main id="threetown">
-            <section class="threetowns">
+            <section id="threetowns">
+                <h2 id="towns">Franklin</h2>
+                <p><b>Motto: </b>Where you will grow!</p>
+                <p><b>Year Founded: </b>1788</p>
+                <p><b>Current Population: </b>30,458</p>
+                <p><b>Average Rainfall: </b>21"</p>
+                <p><b>Dates to Remember<br></b><span id="eventsfr"></span></p>
             </section>
-            <script>
-                var header = document.querySelector('header');
-                var section = document.querySelector('section');
-                var requestURL = 'https://byui-cit230.github.io/weather/data/towndata.json';
-                var request = new XMLHttpRequest();
-                request.open('GET', requestURL);
-                request.responseType = 'json';
-                request.send();
-                request.onload = function() {
-                    var threeTowns = request.response;
-                    populateHeader(threeTowns);
-                    showTowns(threeTowns);
-                }
-                function populateHeader(jsonObj) {
-                    var myH1 = document.createElement('h1');
-                    myH1.textContent = "Your Local Community";
-                    header.appendChild(myH1);
+            <section id="threetowns">
+                <h2 id="towns">Greenville</h2>
+                <p><b>Motto: </b>Green is our way of life.</p>
+                <p><b>Year Founded: </b>1805</p>
+                <p><b>Current Population: </b>33,458</p>
+                <p><b>Average Rainfall: </b>25"</p>
+                <p><b>Dates to Remember<br></b><span id="eventsgr"></span></p>
+            </section>
+            <section id="threetowns">
+                <h2 id="towns">Springfield</h2>
+                <p><b>Motto: </b>Where everyone is lifted.</p>
+                <p><b>Year Founded: </b>1826</p>
+                <p><b>Current Population: </b>17,852</p>
+                <p><b>Average Rainfall: </b>17"</p>
+                <p><b>Dates to Remember<br></b><span id="eventssp"></span></p>
+            </section>
 
-                    var myPara = document.createElement('p');
-                    myPara.textContent = "Franklin, Greenville, and Springfield ";
-                    header.appendChild(myPara);
-                }
-                function showTowns(jsonObj) {
-                    var towns = jsonObj['towns'];
-                    towns.splice (2,1);
-
-                    for (var i = 0; i < towns.length; i++) {
-                        var myArticle = document.createElement('article');
-                        var myH2 = document.createElement('h2');
-                        var myPara1 = document.createElement('p');
-                        var myPara2 = document.createElement('p');
-                        var myPara3 = document.createElement('p');
-                        var myPara4 = document.createElement('p');
-                        var myPara5 = document.createElement('p');
-                        var myList = document.createElement('ul');
-
-                        myH2.textContent = towns[i].name;
-                        myPara1.textContent = 'Motto: ' + towns[i].motto;
-                        myPara2.textContent = 'Founded: ' + towns[i].yearFounded;
-                        myPara3.textContent = 'Current population: ' + towns[i].currentPopulation;
-                        myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall + " inches";
-                        myPara5.textContent = 'Community Events:';
-
-                        var communityEvents = towns[i].events;
-                        for (var j = 0; j < communityEvents.length; j++) {
-                            var listItem = document.createElement('li');
-                            listItem.textContent = communityEvents[j];
-                            myList.appendChild(listItem);
-                        }
-
-                        myArticle.appendChild(myH2);
-                        myArticle.appendChild(myPara1);
-                        myArticle.appendChild(myPara2);
-                        myArticle.appendChild(myPara3);
-                        myArticle.appendChild(myPara4);
-                        myArticle.appendChild(myPara5);
-                        myArticle.appendChild(myList);
-
-                        section.appendChild(myArticle);
-                    }
-                }
-
-            </script>
 
 
         </main>
@@ -130,7 +90,40 @@
         <script src="scripts/hamburger.js"></script>
         <script src="scripts/currentdate.js"></script>
         <!--<script src="scripts/windchill.js"></script>-->
+        <script>
+            var requestURL = '//byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL, true);
+            request.send();
 
+            request.onload = function() {
+
+                var currentevent = JSON.parse(request.responseText);
+                var eventfr = currentevent.towns["0"].events;
+                var eventgr = currentevent.towns["1"].events;
+                var eventsp = currentevent.towns["3"].events;
+                console.log(currentevent);
+
+                var text = "";
+                for (i = 0; i < eventfr.length; i++) {
+                    text += eventfr[i] + "<br>";
+                }
+                document.getElementById("eventsfr").innerHTML= text;
+
+                text = "";
+                for (i = 0; i < eventgr.length; i++) {
+                    text += eventgr[i] + "<br>";
+                }
+                document.getElementById("eventsgr").innerHTML= text;
+
+                text = "";
+                for (i = 0; i < eventsp.length; i++) {
+                    text += eventsp[i] + "<br>";
+                }
+                document.getElementById("eventssp").innerHTML= text;
+
+            }
+        </script>
     </body>
 
 </html>
