@@ -43,7 +43,7 @@ header figure.logo {
 header .subheading {
     color: #4b666e;
     font-family: 'Roboto', sans-serif;
-    font-size: .8em;
+    font-size: 1em;
     margin: 0;
     padding: 0;
 }
@@ -138,18 +138,20 @@ section#threetowns {
 
 
 }
-section.threetowns p {
+section#threetowns p {
    margin: 0;
-    text-align: left;
+    text-align: center;
     color: #4b666e;
-    line-height:.8em;
     padding-left: .2em;
     padding-right: .2em;
 
 
 }
-section.threetowns li {
-    justify-content: left;
+span#eventsfr, span#eventsgr, span#eventssp {
+    color: #c32439;
+}
+section#threetowns li {
+    justify-content: center;
     width: 98%;
     color: #c32439;
 }
