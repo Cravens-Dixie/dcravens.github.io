@@ -59,40 +59,37 @@
     margin: 0;
 }
     /*-------Home Page----------*/
-    main #threetown {
-        display: flex;
-        flex-direction: row nowrap;
-        flex-wrap: wrap;
-        margin: auto;
-        justify-content: space-around;
-        align-items: stretch;
-
+    main#threetown {
+        display: grid;
+        width: 95%;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-gap: 1em;
     }
-    section.threetowns article {
-        display: flex;
-        flex-direction: column;
-        margin: auto;
-        justify-content: space-around;
-        align-items: stretch;
+     section#threetowns {
+        background-color: #d2ddd8;
+        border: 1px solid #122034;
+        margin: .3em;
+        justify-content: center;
+       }
 
-    }
-    section.threetowns h2 {
-        clear: right;
-        align-items: center;
+     h2#towns {
+         clear: right;
+        justify-self: center;
         color: #122034;
-        width: auto;
+        width: 100%;
+         padding: .4em;
+    }
+    section#threetowns p {
+        text-align: start;
+        width: 100%;
+        color: #4b666e;
+        line-height: normal;
     }
     section.threetowns ul {
         width: auto;
         justify-content: center;
         text-decoration: none;
 
-    }
-    section.threetowns p {
-        justify-content: center;
-        width: auto;
-        color: #4b666e;
-        line-height: normal;
     }
     section.threetowns li {
         justify-content: left;

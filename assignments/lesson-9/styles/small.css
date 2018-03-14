@@ -115,19 +115,21 @@ main section.summary h3{
 
 }
 /*--------Home Page-------*/
-section.threetowns article {
-    background-color: #d2ddd8;
-    border: 1px solid #122034;
-    margin: .3em;
+main#threetown {
     display: grid;
     width: 95%;
     grid-template-columns: 1fr;
     grid-gap: 1em;
+}
+section#threetowns {
+    background-color: #d2ddd8;
+    border: 1px solid #122034;
+    margin: .3em;
     justify-content: center;
 
   }
-section.threetowns h2 {
-    clear: right;
+ h2.towns {
+
     text-align: center;
     color: #122034;
 
@@ -135,9 +137,10 @@ section.threetowns h2 {
 }
 section.threetowns p {
    margin: 0;
-    text-align: center;
+    text-align: left;
     color: #4b666e;
-    line-height: normal;
+    line-height:.8em;
+
 
 }
 section.threetowns li {
