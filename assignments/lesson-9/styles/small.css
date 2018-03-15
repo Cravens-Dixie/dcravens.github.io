@@ -93,13 +93,10 @@ nav ul.hide {display: none;}
 
  main figure.franklinmain {
     margin: 0 0 0 2%;
-    width: 100%;
+    width: auto;
 
 }
 
-main figure.franklinmain img {
-    width: 100%;
-}
 main h2 {
     color: #122034;
     font-size: 1.5em;
@@ -114,6 +111,19 @@ main section.summary {
 main section.summary h3{
 
 }
+p.town-article {
+    width: 98%;
+}
+
+/* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
+article p.town-article img {
+    /* fill the page in the small/phone view */
+    width: 95%;
+    margin: 0 2em 2em 0;
+}
+article {
+    overflow: auto;
+}
 /*--------Home Page-------*/
 main#threetown {
     display: grid;
@@ -121,8 +131,6 @@ main#threetown {
     grid-template-columns: 1fr;
     grid-gap: 1em;
     margin: .75em;
-
-
 }
 section#threetowns {
     background-color: #d2ddd8;
@@ -135,8 +143,6 @@ section#threetowns {
 
     text-align: center;
     color: #122034;
-
-
 }
 section#threetowns p {
    margin: 0;
@@ -144,8 +150,6 @@ section#threetowns p {
     color: #4b666e;
     padding-left: .2em;
     padding-right: .2em;
-
-
 }
 span#eventsfr, span#eventsgr, span#eventssp {
     color: #c32439;
@@ -187,15 +191,7 @@ div#gallery {
     background-color: #f2f2f2;
 }
 
-/* This structure refers to img elements that are the posterity of paragraph elements within artcle elements */
-article p.town-article img {
-    /* fill the page in the small/phone view */
-    width: 100%;
-    margin: 0 2em 2em;
-}
-article {
-    overflow: auto;
-}
+/*-----------footer-----------------*/
 footer.clearfix {
     content: "";
     display: table;
@@ -218,7 +214,7 @@ footer > p {
     color: azure
 }
 
-/*-----------------------------------------Form Styles------------------------------------------------------ */
+/*-----------------------------------------Form Styles-------------------------------------------------- */
 form#reporter {
     margin: 1em, 3%;
 }

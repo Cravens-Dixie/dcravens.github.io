@@ -31,8 +31,10 @@
 
     article p.town-article img {
         width: 29.333%;
-    }
+        margin-left: .4em;
 
+    }
+/*----------------gallery page--------------------*/
     div#gallery {
         display: grid;
         width: 100%;

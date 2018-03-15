@@ -52,10 +52,15 @@
         float: right;
         width: 47%;
     }
+    /* responsive images */
+    article p.town-article img {
+        width: 62.666%;
+        float: right;
+    }
     main figure.franklinmain img {
     clear: right;
    float: left;
-    width: 48%;
+    width: 50%;
     margin: 0;
 }
     /*-------Home Page----------*/
@@ -96,7 +101,7 @@
         width: auto;
         color: #c32439;
     }
-    /*-----Gallery Page-------*/
+    /*-----Gallery Page------------------------*/
     div#gallery {
         display: grid;
         width: 100%;
@@ -114,13 +119,6 @@
      background-color: #d2ddd8;
 
 }
-
-
-    /* responsive images */
-    article p.town-article img {
-        width: 62.666%;
-        float: right;
-    }
 
 }
 
