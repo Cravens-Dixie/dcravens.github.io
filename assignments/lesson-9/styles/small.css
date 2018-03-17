@@ -92,7 +92,7 @@ nav ul li a:hover {
 nav ul.hide {display: none;}
 
  main figure.franklinmain {
-    margin: 0 0 0 2%;
+    margin: 0 0 0 0;
     width: auto;
 
 }
