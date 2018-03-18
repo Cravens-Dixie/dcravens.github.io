@@ -125,14 +125,14 @@ article {
     overflow: auto;
 }
 /*--------Home Page-------*/
-main#threetown {
+main.threetown {
     display: grid;
-    width: 100%;
+    width: 95%;
     grid-template-columns: 1fr;
     grid-gap: 1em;
     margin: .75em;
 }
-section#threetowns {
+section.threetowns {
     background-color: #d2ddd8;
     border: 1px solid #122034;
     margin: .3em;
@@ -144,8 +144,8 @@ section#threetowns {
     text-align: center;
     color: #122034;
 }
-section#threetowns p {
-   margin: 0;
+section.threetowns p {
+    margin: .2em;
     text-align: center;
     color: #4b666e;
     padding-left: .2em;
@@ -154,9 +154,9 @@ section#threetowns p {
 span#eventsfr, span#eventsgr, span#eventssp {
     color: #122304;
 }
-section#threetowns li {
+section.threetowns li {
     justify-content: center;
-    width: 98%;
+    width: 95%;
     color: #122034;
 }
 /*----------Gallery Page--------*/
@@ -216,7 +216,7 @@ footer > p {
 
 /*-----------------------------------------Form Styles-------------------------------------------------- */
 form#reporter {
-    margin: 1em, 3%;
+    margin: 1em 3%;
 }
 fieldset {
     background-color: #d2ddd8;

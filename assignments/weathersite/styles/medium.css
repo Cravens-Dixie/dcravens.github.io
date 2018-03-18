@@ -64,27 +64,26 @@
     margin: 0;
 }
     /*-------Home Page----------*/
-    main#threetown {
+    main.threetown {
         display: grid;
         width: 95%;
         grid-template-columns: 1fr 1fr 1fr;
         grid-gap: 1em;
     }
-     section#threetowns {
+     section.threetowns {
         background-color: #d2ddd8;
         border: 1px solid #122034;
         margin: .3em;
         justify-content: center;
        }
 
-     h2#towns {
+     h2.towns {
          clear: right;
-        justify-self: center;
-        color: #122034;
-        width: 100%;
+         color: #122034;
+         width: 100%;
          padding: .4em;
     }
-    section#threetowns p {
+    section.threetowns p {
         text-align: start;
         width: 100%;
         color: #4b666e;
@@ -97,7 +96,6 @@
 
     }
     section.threetowns li {
-        justify-content: left;
         width: auto;
         color: #c32439;
     }
