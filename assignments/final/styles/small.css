@@ -102,7 +102,8 @@ footer {
     grid-column: 1 / 3;
 }
 
-.greatdiv, .bikegiant, .biketrek, .roadbike, .advtour, .newmtnbike {
+.greatdiv, .bikegiant, .biketrek,
+.roadbike, .advtour, .newmtnbike, .bikeparts, .contactus {
     width: 100%;
 }
 .grid2 {
@@ -151,13 +152,11 @@ footer {
     padding-left:.3em;
 }
 
-#tours {
-    background-color: #49535c;
+#tours, #event {
+    background-color: rgba(73, 83, 92, .8);
+    color: 13171a;
 }
-#event {
-    background-color: #49535c;
-    color: whitesmoke;
-}
+
 .bikebr {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
@@ -249,5 +248,34 @@ footer {
 #event p {
     padding-left: .3em;
 }
+/*New Bikes Page*/
+.salesinfo {
+    background-color: rgba(73, 83, 92, .5)
+}
+.divline {
+    display: block;
+    height: 3px;
+    border: 0;
+    padding: 0;
+    background-color: #e7b401;
+    width: 100%;
+}
 
+/* Service page and table */
 
+}
+table, th, td {
+    border: 1px solid black;
+    background-color: rgba(159, 24, 2, .7);
+    color: whitesmoke;
+
+}
+th, td {
+    padding: 5px;
+}
+
+/* contact page*/
+
+.address {
+    text-align: center;
+}
