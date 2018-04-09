@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Events</title>
+        <meta name="author" content="Dixie Cravens">
+        <meta name="description" content="Bicycling in Bozeman, Montana">
+        <!-- external style references in the proper cascading order -->
+        <!-- Google API font reference -->
+        <link href="https://fonts.googleapis.com/css?family=Anton|Roboto:500" rel="stylesheet">
+        <!-- external style references in the proper cascading order -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/small.css" rel="stylesheet">
+        <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+    </head>
+
+    <body>
+        <header>
+            <!-- Logo-->
+            <figure></figure>
+            <h1>The Mountain Spoke</h1>
+            <div class="subheading">Cycling Bozeman Style</div>
+
+
+            <nav class="mainNav">
+                <button onclick="toggleNavMenu()">&#9776;</button>
+                <ul id="navigation" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adventure-tours.html">Adventure Tours</a></li>
+                    <li class="active"><a href="events.html">Events</a></li>
+                    <li><a href="newbikes.html">New Bikes</a></li>
+                    <li><a href="servicerepairs.html">Services/Repairs</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <img class="greatdiv" src="images/great-divide-ride.jpg" alt="ride the great divide">
+            <h4>Ride the longest off-pavement route in the world.</h4>
+            <p>The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Roughly 80% of it is composed of county, Forest Service (USFS), and Bureau of Land Management (BLM) dirt and gravel roads. The remainder is made up of four-wheel-drive tracks and singletrack trails (10%), and paved roads (10%). See <a href="https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/great-divide-mountain-bike-route/">Adventure Cycling's website</a> for all the details, including maps of the full route.
+            </p>
+            <p>Ride it all or <b>join us</b> for a 542 mile trek starting in Roosville, MT and ending in Polaris, MT. Want to ride with a group? Please fill out the form below and we will add you to our preparation, group lodging deals, and general event emails. We promise it will be worth it!</p>
+
+        </main>
+        <section id="form">
+            <form action="thanks.html" target="_blank" method="GET" enctype="multipart/form-data" name="stormreport" id="reporter">
+                <fieldset class="personal">
+                    <legend>Personal Information</legend>
+                    <label><span>Full Name:</span><input name="fullname" type="text" value="" placeholder="Full Name" pattern="[a-zA-Z -.]{5,}" required></label>
+
+                    <label><span>Email:</span><input name="email" type="email" value="" placeholder="Anybody@gmail.com"></label>
+
+                    <label><span>Phone:</span><input name="phone" type="tel" value="" placeholder="8885551234" pattern="[0-9]{10,20}" required></label>
+
+                    <label><span>Date of Birth:</span><input name="dob" type="date" required></label>
+                    <label><span>Home State or Country:</span><input name="state" type="text" required></label>
+
+                </fieldset>
+                <fieldset class="storm">
+
+                    <label><span>Special Accomodations/Comments:</span><textarea name="message" placeholder="optional" rows="15" cols="30"></textarea></label>
+                </fieldset>
+
+                <input name="submitButton" type="submit" class="submitButton" onclick="thanks.html">
+                <input name="redirect" type="hidden" value="thanks.html">
+
+
+            </form>
+        </section>
+
+        <footer class="clearfix">
+            <aside>
+                <h4>Contact Us!</h4>
+                <p>The Mountain Spoke<br>
+                    3950 Valley Commons Drive<br>
+                    Bozeman, MT<br>
+                    999-999-9999<br>
+                    contact@theurl.com</p>
+            </aside>
+            <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoke <span id="currentdate"></span></p>
+
+
+        </footer>
+

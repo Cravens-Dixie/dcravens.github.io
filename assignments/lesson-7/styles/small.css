@@ -96,8 +96,9 @@ nav ul.hide {display: none;}
 
  div#gallery {
     display: grid;
-    grid-template-columns: auto;
-     grid-gap: 1em 1em;
+     width: 100%;
+    grid-template-columns: 1fr;
+     grid-gap: 1em;
     justify-content: center;
 
 }

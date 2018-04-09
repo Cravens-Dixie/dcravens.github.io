@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en-us">
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>East Tennessee Accurate Weather</title>
+        <meta name="author" content="Dixie Cravens">
+        <meta name="description" content="East TN weather and community information">
+        <!-- external style references in the proper cascading order -->
+        <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville:bold|Roboto:light" rel="stylesheet">
+        <!-- Google API font reference -->
+        <link href="styles/normalize.css" rel="stylesheet">
+        <!-- normalize useragent/browser defaults -->
+        <link href="styles/small.css" rel="stylesheet">
+        <!-- default styles - small/phone views -->
+        <link href="styles/medium.css" rel="stylesheet">
+        <!-- medium/tablet views -->
+        <link href="styles/large.css" rel="stylesheet">
+        <!-- large/wide/desktop views -->
+    </head>
+
+    <body>
+
+        <header class="clearfix">
+            <figure class="logo">
+                <img src="images/-weather-logo.png" alt="logo" srcset="images/-weather-logo.png 1x, images/weather-logo-2.png 2x, images/weather-logo-3.png 3x">
+            </figure>
+
+            <h1>East Tennessee Accurate Weather</h1>
+            <div class="subheading"><em>The RIGHT information, RIGHT now.</em></div>
+        </header>
+
+        <!-- site navigation use placeholder references -->
+        <nav class="mainNav">
+            <button onclick="toggleNavMenu()">&#9776;</button>
+            <ul id="navigation" class="hide">
+                <li class="active"><a href="index.html">Home</a></li>
+                <li><a href="franklin.html">Franklin</a></li>
+                <li><a href="greenville.html">Greenville</a></li>
+                <li><a href="springfield.html">Springfield</a></li>
+                <li><a href="stormcenter.html">Storm Center</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+
+
+        <main class="threetown">
+            <section class="threetowns">
+                <h2 class="towns">Franklin</h2>
+                <p><b>Motto: </b>Where you will grow!</p>
+                <p><b>Year Founded: </b>1788</p>
+                <p><b>Current Population: </b>30,458</p>
+                <p><b>Average Rainfall: </b>21"</p><br>
+                <p><b>Dates to Remember:<br></b><span id="eventsfr"></span></p>
+            </section>
+            <section class="threetowns">
+                <h2 class="towns">Greenville</h2>
+                <p><b>Motto: </b>Green is our way of life.</p>
+                <p><b>Year Founded: </b>1805</p>
+                <p><b>Current Population: </b>33,458</p>
+                <p><b>Average Rainfall: </b>25"</p><br>
+                <p><b>Dates to Remember:<br></b><span id="eventsgr"></span></p>
+            </section>
+            <section class="threetowns">
+                <h2 class="towns">Springfield</h2>
+                <p><b>Motto: </b>Where everyone is lifted.</p>
+                <p><b>Year Founded: </b>1826</p>
+                <p><b>Current Population: </b>17,852</p>
+                <p><b>Average Rainfall: </b>17"</p><br>
+                <p><b>Dates to Remember:<br></b><span id="eventssp"></span></p>
+            </section>
+
+
+
+        </main>
+
+        <footer class="clearfix">
+            <aside>
+                <h4>Contact Us!</h4>
+                <p>East Tennessee Accurate Weather<br>
+                    123 Main Street<br>
+                    Knoxville, TN 37920<br>
+                    999-999-9999<br>
+                    contact@theurl.com</p>
+            </aside>
+            <p class="footer-bar">&copy;2017 All Rights Reserved | ETA Weather | <span id="currentdate"></span>
+            <p class="footer-bar"><a href="../lesson-11/Lesson4/animated-menu-begin.htm"> animated-menu | </a><a href="../lesson-11/Lesson4/drop-down-menu-begin.htm"> drop-down-menu | </a><a href="../lesson-11/Lesson4/fruit-basket-begin.htm"> fruitbasket | </a><a href="../lesson-11/Lesson4/insert-html-begin.htm"> insert-html | </a><a href="../lesson-11/Lesson4/toggle-button-begin.htm"> toggle-button | </a></p>
+
+        </footer>
+
+        <script src="scripts/hamburger.js"></script>
+        <script src="scripts/currentdate.js"></script>
+        <script src="scripts/towndata.js"></script>
+        <!--<script src="scripts/windchill.js"></script>-->
+        <!--<script>
+            var requestURL = '//byui-cit230.github.io/weather/data/towndata.json';
+            var request = new XMLHttpRequest();
+            request.open('GET', requestURL, true);
+            request.send();
+
+            request.onload = function() {
+
+                var currentevent = JSON.parse(request.responseText);
+                var eventfr = currentevent.towns["0"].events;
+                var eventgr = currentevent.towns["1"].events;
+                var eventsp = currentevent.towns["3"].events;
+                console.log(currentevent);
+
+                var text = "";
+                for (i = 0; i < eventfr.length; i++) {
+                    text += eventfr[i] + "<br>";
+                }
+                document.getElementById("eventsfr").innerHTML= text;
+
+                text = "";
+                for (i = 0; i < eventgr.length; i++) {
+                    text += eventgr[i] + "<br>";
+                }
+                document.getElementById("eventsgr").innerHTML= text;
+
+                text = "";
+                for (i = 0; i < eventsp.length; i++) {
+                    text += eventsp[i] + "<br>";
+                }
+                document.getElementById("eventssp").innerHTML= text;
+
+            }
+        </script>-->
+    </body>
+
+</html>

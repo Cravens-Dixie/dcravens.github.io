@@ -1,0 +1,253 @@
+/* Default rules and small screen specific rules */
+/* navigation */
+
+h1, h2, h3, h4, .subheading {
+    font-family: 'Anton', sans-serif;
+}
+header, nav, footer {
+    text-align: center;
+    width: auto;
+    margin: .5em;
+
+}
+header {
+    background-color: #49535c;
+    margin-bottom: 0;
+    width: 100%;
+}
+
+
+h1 {
+    color: #e7b401;
+    margin: 0;
+
+}
+
+nav {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    width: 100%;
+}
+nav button {
+    margin: .2rem 2%;
+    background-color: #35711b;
+    border: none;
+    font-size: 1.6rem;
+    color: black;
+}
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+nav ul li a {
+    display: block;
+    padding: .8rem 2%;
+    text-decoration: none;
+    color: #13171a; /*rgba(255,255,255,0.8);*/
+    border-top: 1px solid rgba(0,0,0,0.3);
+}
+
+nav ul li.active a {
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+nav ul.hide {display: none;}
+
+/* body*/
+body {
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 0;
+}
+h3.bikebrands, h3.tour, h3.events {
+    margin-top: .2em;
+    text-align: left;
+
+    padding-left: .2em;
+    color: #e7b401;
+}
+.bikebrands {
+    margin-bottom: 3px;
+    background-color: rgba(73, 83, 92, .6);
+}
+
+.btn1 button, #tours button, #brands button, #event button {
+    margin: 4px 2px;
+    background-color: #35711b;
+    color:  #e7b401;
+
+}
+
+#tours button {
+    padding-left: .3em;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0;
+}
+main,
+#tours,
+article,
+footer {
+    grid-column: 1 / 3;
+}
+#brands {
+    grid-column: 1 / 3;
+}
+
+.greatdiv, .bikegiant, .biketrek, .roadbike, .advtour, .newmtnbike {
+    width: 100%;
+}
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+
+}
+#mainpic {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+
+}
+#overlay {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: rgba(49, 49, 49, .4);
+    z-index: 2;
+}
+.btn1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    z-index: 3;
+    padding-left:.3em;
+}
+
+.grid3, .grid4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 0;
+
+}
+.mainpict {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    width: 100%;
+    z-index: -1;
+}
+.homepage {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    z-index: 2;
+    color: #13171a;
+    padding-left:.3em;
+}
+
+#tours {
+    background-color: #49535c;
+}
+#event {
+    background-color: #49535c;
+    color: whitesmoke;
+}
+.bikebr {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+}
+.divider3 {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    width: 100%;
+    height: 4em;
+    background-color: #9f1802;
+    margin-top: 0;
+    padding-left: .3em;
+    z-index: 1;
+}
+
+.divider1 {
+    width: 100%;
+    height: 4em;
+    background-color: #9f1802;
+    margin-top: 0;
+    padding-left: .3em;
+}
+.divider {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    width: 100%;
+    height: 4em;
+    background-color: rgba(73, 83, 92, .6);
+    z-index: 1;
+    padding-top: 1em;
+
+}
+.subhead {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+    background-color: rgba(73, 83, 92, .6);
+    color: whitesmoke;
+    font-size: 15px;
+    z-index: 2;
+    padding-left: .3em;
+}
+a {
+    color: whitesmoke;
+}
+.list {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+    background-color: clear;
+    color: whitesmoke;
+    font-size: 12px;
+    z-index: 2;
+}
+.list ul li.active a {
+    background-color: rgba(0,0,0,0.4);
+    color: #fff;
+}
+
+.list ul li a:hover {
+    background-color: rgba(0,0,0,0.4);
+}
+.bikemain {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    width: 100%;
+    z-index: -1;
+}
+h2.bikebr {
+    text-align: left;
+    padding-left: .2em;
+    color: #e7b401;
+    margin-top: 0;
+}
+.btn2 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    align-self: start;
+    justify-self: start;
+    margin: 4px 2px;
+    background-color: #35711b;
+    color:  #e7b401;
+    z-index: 1;
+}
+footer {
+    color: whitesmoke;
+    background-color: #49535c;
+}
+#event p {
+    padding-left: .3em;
+}
+
+
