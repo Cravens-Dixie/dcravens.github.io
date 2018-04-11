@@ -42,33 +42,38 @@
             </nav>
         </header>
 
-        <main class="touring">
+        <main id="touring" class="grid4">
             <div class="subhead">
-                <p>Some places are just better seen from the seat of a bike!</p>
+                <p>Some places are just better from the seat of a bike!</p>
             </div>
             <img class="advtour" src="images/cycling-bicycle-riding-sport-38296.jpg" alt="road tour">
-            <p>
-            Come on adventure with us as we take daily tours of exciting Bozeman bike destinations. Each tour is guided by a seasoned expert who knows how to show you a great time and make sure your experience is unforgettable. Take a look at our 2018 schedule to find the perfect excursion for you. We promise it's more fun to travel with a group!
-            </p>
-            <div class="divider1">
+        </main>
+        <section id="excursions" class="grid5">
+          <div class="divider1">
             <h2> 2018 Tour Excursions May 1st-September 15th</h2>
             </div>
-            <div>
-            <h3>Excusion "Sightseeing"</h3>
-            <p>
-                Excursion "Sightseeing" is a relaxed tour perfect for all ages and skill levels. We start at the <b>Park Square at 5pm Monday and Wednesday</b> for a 2.5-hour ride through 8 miles of trails through Bozeman State Park.
-                This same tour runs <b>Saturday morning at 930 am</b> for all you weekend warriors!No maximum group size. Call the store and let us know you are coming, or just show up. It's all the same to us.<br><br>
-                This tour is free, but your guide appreciates tips and gifts.
-            </p>
+            <div class="tourinfo">
+                <p >
+                    Come on an adventure with us as we take daily tours of exciting Bozeman bike destinations. Each tour is guided by a seasoned expert who knows how to show you a great time and make sure your experience is unforgettable. Take a look at our 2018 schedule to find the perfect excursion for you. We promise it's more fun to travel with a group!
+                </p>
             </div>
-            <div >
-                <h3>Excursion "Mountain Ride"</h3></div>
+                <div id="sightsee">
+                <h3>Excusion "Sightseeing"</h3>
+                <p>
+                Excursion "Sightseeing" is a relaxed tour perfect for all ages and skill levels. We start at the <b>Park Square at 5pm Monday and Wednesday</b> for a 2.5-hour ride through 8 miles of trails through Bozeman State Park.
+                This same tour runs <b>Saturday morning at 930 am</b> for all you weekend warriors! No maximum group size. Call the store and let us know you are coming, or just show up. It's all the same to us.<br><br>
+                This tour is free, but your guide appreciates tips and gifts.
+                </p>
+            </div>
+            <div id="mountride">
+                <h3>Excursion "Mountain Ride"</h3>
             <p>
                 Excursion "Mountain Ride" is a 2-hour guided introduction to mountain biking and is a great for experienced bikers who want to learn mountain bike skills. Our guide will explain the mechanics of each type of terrain, as it comes, and is a fountain of tips for expert mountain biking. The tour meets at the <b>Bozeman State Park 10-mile Trail parking lot on Tuesday and Thursday at 5pm, and 2pm on Saturday.</b><br><br> <b>Tour fee $15.</b> Pay by phone, pay at the store, or pay with cash at the trailhead, just make sure to call ahead! Maximum group size is 12. If you have questions about the trail or your bike, call the store during business hours 999-999-9999.
             </p>
+            </div>
 
 
-        </main>
+        </section>
         <footer class="clearfix">
             <aside>
                 <h4>Contact Us!</h4>
@@ -82,4 +87,12 @@
 
 
         </footer>
+        <script>
+            function toggleNavMenu() {
+                //console.log(document.getElementById("navigation").classList);
+                document.getElementById("navigation").classList.toggle("hide");
+            }
+        </script>
+    </body>
+</html>
 

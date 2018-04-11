@@ -42,14 +42,15 @@
             </nav>
         </header>
 
-        <main class="service">
+        <main id="service" class="grid5">
             <div class="subhead">
-                <h3>Great bikes are made of great parts. Quality parts ensure success on the trails.</h3>
+                <p>Great bikes are made of great parts. Quality parts ensure success on the trails.</p>
             </div>
             <img class="bikeparts" src="images/bikepartsflip.jpg" alt="bike parts">
+            <div class="newinfo">
             <h4>Perfect parts, perfect service.</h4>
             <p>We only use quality factory parts that are guaranteed to fit your bike <em>perfectly</em>. That is what we use for our bikes. We know how important quality service is, that is why all our repairs are backed by a 60 day Perfect Repair guarantee.</p>
-
+            </div>
         </main>
         <table>
             <tr>
@@ -98,6 +99,12 @@
 
 
         </footer>
+        <script>
+            function toggleNavMenu() {
+                //console.log(document.getElementById("navigation").classList);
+                document.getElementById("navigation").classList.toggle("hide");
+            }
+        </script>
     </body>
 </html>
 

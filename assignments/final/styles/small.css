@@ -1,9 +1,7 @@
 /* Default rules and small screen specific rules */
 /* navigation */
 
-h1, h2, h3, h4, .subheading {
-    font-family: 'Anton', sans-serif;
-}
+
 header, nav, footer {
     text-align: center;
     width: auto;
@@ -17,12 +15,8 @@ header {
 }
 
 
-h1 {
-    color: #e7b401;
-    margin: 0;
 
-}
-
+/*----navigation------*/
 nav {
     margin-bottom: 0;
     padding-bottom: 0;
@@ -58,60 +52,100 @@ nav ul li a:hover {
 }
 nav ul.hide {display: none;}
 
-/* body*/
+/*------- general body---------*/
+h1, h2, h3, h4, .subheading {
+    font-family: 'Anton', sans-serif;
+    text-align: center;
+}
+h1 {
+    color: #e7b401;
+    margin: 0;
+
+}
+p {
+    padding-left: .3em;
+
+}
 body {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     margin-top: 0;
 }
-h3.bikebrands, h3.tour, h3.events {
-    margin-top: .2em;
-    text-align: left;
-
-    padding-left: .2em;
-    color: #e7b401;
-}
-.bikebrands {
-    margin-bottom: 3px;
-    background-color: rgba(73, 83, 92, .6);
+a {
+    color: whitesmoke;
 }
 
+/*---buttons---*/
 .btn1 button, #tours button, #brands button, #event button {
     margin: 4px 2px;
     background-color: #35711b;
     color:  #e7b401;
+    box-shadow: 4px 4px 10px #122034;
 
 }
 
 #tours button {
     padding-left: .3em;
+    box-shadow: 4px 4px 10px #122034;
 }
 
+/*---grids---*/
 .grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 0;
 }
-main,
-#tours,
-article,
-footer {
-    grid-column: 1 / 3;
-}
-#brands {
-    grid-column: 1 / 3;
-}
 
-.greatdiv, .bikegiant, .biketrek,
-.roadbike, .advtour, .newmtnbike, .bikeparts, .contactus {
-    width: 100%;
-}
-.grid2 {
+.grid2, .grid4 {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 0;
-
+}
+.grid3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em auto auto;
+    grid-gap: 0;
+}
+/*---images-----*/
+.greatdiv, .bikegiant, .biketrek, .mainpict, .bikemain,
+.roadbike, .advtour, .newmtnbike, .bikeparts, .contactus {
+    width: 100%;
+}
+/*--------home page-----*/
+ h3.tour, h3.events {
+    margin-top: .2em;
+   padding-top: .3em;
+    padding-left: .2em;
+    color: #e7b401;
+}
+.favbikes {
+    margin-top: .2em;
+    padding-top: .3em;
+    padding-left: .2em;
+    color: #e7b401;
+    text-align: left;
+    margin-bottom: 3px;
+    /*background-color: rgba(73, 83, 92, .6);*/
+    font-size: 25px;
+}
+.bikebrands {
+    text-align: left;
+    margin-bottom: 3px;
+    background-color: rgba(73, 83, 92, .6);
+    font-size: 35px;
+}
+main,
+aside,
+article,
+footer {
+    grid-column: 1 / 3;
+}
+.mainpict {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: -1;
 }
 #mainpic {
     grid-column: 1 / 3;
@@ -124,25 +158,8 @@ footer {
     background-color: rgba(49, 49, 49, .4);
     z-index: 2;
 }
-.btn1 {
-    grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    z-index: 3;
-    padding-left:.3em;
-}
-
-.grid3, .grid4 {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    grid-gap: 0;
-
-}
-.mainpict {
+#brands {
     grid-column: 1 / 3;
-    grid-row: 1 / 3;
-    width: 100%;
-    z-index: -1;
 }
 .homepage {
     grid-column: 1 / 3;
@@ -151,16 +168,18 @@ footer {
     color: #13171a;
     padding-left:.3em;
 }
+.btn1 {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    z-index: 3;
+    padding-left:.3em;
 
+}
 #tours, #event {
     background-color: rgba(73, 83, 92, .8);
     color: 13171a;
 }
 
-.bikebr {
-    grid-column: 1 / 3;
-    grid-row: 2 / 3;
-}
 .divider3 {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
@@ -168,8 +187,10 @@ footer {
     height: 4em;
     background-color: #9f1802;
     margin-top: 0;
+    padding-top: .5em;
     padding-left: .3em;
     z-index: 1;
+    text-align: center;
 }
 
 .divider1 {
@@ -178,33 +199,23 @@ footer {
     background-color: #9f1802;
     margin-top: 0;
     padding-left: .3em;
+    text-align: center;
 }
-.divider {
+#brands .divider1 {
     grid-column: 1 / 3;
-    grid-row: 2 / 3;
-    width: 100%;
-    height: 4em;
-    background-color: rgba(73, 83, 92, .6);
+    grid-row: 1 / 2;
+    height: 3em;
     z-index: 1;
     padding-top: 1em;
 
 }
-.subhead {
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    align-self: end;
-    background-color: rgba(73, 83, 92, .6);
-    color: whitesmoke;
-    font-size: 15px;
-    z-index: 2;
-    padding-left: .3em;
+#brands .subhead {
+   display: none;
 }
-a {
-    color: whitesmoke;
-}
+
 .list {
     grid-column: 2 / 3;
-    grid-row: 2 / 3;
+    grid-row: 3 / 4;
     align-self: center;
     background-color: clear;
     color: whitesmoke;
@@ -221,7 +232,7 @@ a {
 }
 .bikemain {
     grid-column: 1 / 3;
-    grid-row: 1 / 3;
+    grid-row:2 / 4;
     width: 100%;
     z-index: -1;
 }
@@ -233,12 +244,13 @@ h2.bikebr {
 }
 .btn2 {
     grid-column: 1 / 2;
-    grid-row: 2 / 3;
-    align-self: start;
+    grid-row: 3 / 4;
+    align-self: end;
     justify-self: start;
     margin: 4px 2px;
     background-color: #35711b;
     color:  #e7b401;
+    box-shadow: 4px 4px 10px #122034;
     z-index: 1;
 }
 footer {
@@ -248,7 +260,124 @@ footer {
 #event p {
     padding-left: .3em;
 }
+/* Adventure tours page*/
+.advtour {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: -1;
+    width: 100%;
+
+}
+#touring .subhead {
+    display: none;
+}
+
+.grid5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+}
+#excursions .divider1 {
+    grid-column: 1 / 3;
+
+    height: 5em;
+
+}
+.tourinfo {
+    grid-column: 1 / 3;
+    color: #49535c;
+    /*background-color: rgba(73, 83, 92, .6);*/
+    margin-top: 0;
+    font-size: 20px;
+
+}
+.tourinfo p {
+    margin-top: 0;
+}
+#sightsee {
+    grid-column: 1 / 3;
+    background-color: rgba(53, 113, 27, .6);
+
+}
+#mountride {
+    grid-column: 1 / 3;
+    background-color: rgba(231, 180, 1, .6);
+
+}
+
+/*Events page*/
+.greatdiv {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+#divideinfo .subhead {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+    align-self: end;
+    background-color: rgba(73, 83, 92, .6);
+    color: whitesmoke;
+    font-size: 25px;
+    z-index: 2;
+    padding-left: .3em;
+}
+#joinin {
+    background-color: rgba(73, 83, 92, .4);
+}
+
+
+/*form*/
+form#signup, form#contact {
+    margin: 1em 3%;
+}
+fieldset {
+    background-color: rgba(53, 113, 27, .4);
+    border: #4b666e solid 1px;
+    margin: 1em;
+    border-radius: .8em;
+}
+legend {
+    color: #dc7928;
+    margin-left: 8%;
+    padding: .5em;
+    border: #4b666e solid 1px;
+    background-color: #9ec18f;
+    border-radius: .4em;
+}
+label {
+    display: block;
+    margin: 1em;
+    text-align: left;
+}
+label span {
+    display: block;
+    font-size: .8em;
+    color: #122034;
+    padding-top: 1em;
+    padding-bottom: .3em;
+    text-align: left;
+}
+
+input.submitButton {
+    -webkit-appearance: none;
+    color: #e7b401;
+    border: solid 1px #122034;
+    border-radius: 5px;
+    width: 50%;
+    margin: .5em 0;
+    font-size: 1em;
+    padding: .4em;
+    background: #35711b;
+    box-shadow: 4px 4px 10px #122034;
+}
+
 /*New Bikes Page*/
+h3.bikebrands {
+    margin-top: .2em;
+    padding-top: .3em;
+    padding-left: .2em;
+    color: #e7b401;
+}
 .salesinfo {
     background-color: rgba(73, 83, 92, .5)
 }
@@ -257,13 +386,51 @@ footer {
     height: 3px;
     border: 0;
     padding: 0;
+    margin: 0;
     background-color: #e7b401;
     width: 100%;
+    grid-column: 1 / 3;
+}
+#newbike .subhead {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    align-self: center;
+    background-color: rgba(73, 83, 92, .6);
+    color: whitesmoke;
+    font-size: 18px;
+    z-index: 2;
+    padding-left: .3em;
+
+}
+.newmtnbike {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+.newinfo {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    z-index: 1;
 }
 
 /* Service page and table */
-
+#service .subhead {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    align-self: center;
+    background-color: rgba(73, 83, 92, .6);
+    color: whitesmoke;
+    font-size: 18px;
+    z-index: 2;
+    padding-left: .3em;
 }
+.bikeparts {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+
+
 table, th, td {
     border: 1px solid black;
     background-color: rgba(159, 24, 2, .7);
@@ -275,7 +442,24 @@ th, td {
 }
 
 /* contact page*/
+#contactus .subhead {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-self: start;
+    background-color: rgba(73, 83, 92, .6);
+    color: whitesmoke;
+    font-size: 18px;
+    z-index: 2;
+    padding-left: .3em;
+}
+.contactus {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: -1;
+}
+
 
 .address {
     text-align: center;
 }
+
