@@ -23,13 +23,14 @@
 
     <body>
         <header>
-            <!-- Logo-->
-            <figure></figure>
-            <h1>The Mountain Spoke</h1>
-            <div class="subheading">Cycling Bozeman Style</div>
-
-
-            <nav class="mainNav">
+            <figure class="logo">
+                <img src="images/tms-logo.png" alt="logo"srcset="images/mts-logo-1x.png 1x, images/mts-logo-2x.png 2x, images/mts-logo-3x.png 3x">
+            </figure>
+            <div id="mainhead" >
+                <h1 class="tms">The Mountain Spoke</h1>
+                <div class="subheading">Cycling Bozeman Style</div>
+            </div>
+            <nav class="clearfix" id="mainNav">
                 <button onclick="toggleNavMenu()">&#9776;</button>
                 <ul id="navigation" class="hide">
                     <li class="active"><a href="index.html">Home</a></li>
@@ -45,7 +46,6 @@
             <main class="grid2">
                 <section id="mainpic" class="grid4">
                     <h2 class="homepage">Bozeman's Premier Bike Shop</h2>
-                    <!-- main large background image see wk 6 notes for responsive bkgd imgs -->
                     <img class="mainpict" src="images/Final-home1200.jpg" alt="mountain biking">
                 </section>
                 <div id=overlay></div>
@@ -74,8 +74,10 @@
                     </p>
                 </div>
 
-                <img class="bikemain" src="images/Gallery6_HailAdvanced.jpg" alt="giant brand bikes"><!--image of bike brand-->
+                <img class="bikemain" src="images/Gallery6_HailAdvanced.jpg" alt="giant brand bikes">
+                <div class="btnbikes">
                 <button class="btn2">See All Our Bikes!</button>
+                </div>
             </article>
             <aside id="tours">
                 <div class="divider1"><h3 class="tour">Group Rides and Events</h3>

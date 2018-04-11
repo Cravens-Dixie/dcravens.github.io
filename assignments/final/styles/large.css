@@ -1,19 +1,53 @@
 @media only screen and (min-width: 64em) {
     nav ul li a {padding: .6rem 1rem;}
 
-    .subhead {
-        font-size: 26px;
+
+    .logo {
+        margin-top: 5px;
+    }
+
+    #mainhead {
+        padding-right: 5em;
+    }
+    .tms {
+        font-size: 50px;
+        padding-right: 5em;
+    }
+    div.subheading {
+        padding-right: 9em;
+    }
+    #brands .subhead {
+        font-size: 30px;
         padding-left: .3em;
     }
     .list {
         align-self: start;
         font-size: 24px;
+        margin: 5px 200px 10px 0px;
+
 
     }
-    .btn2 {
+    .btnbikes {
         grid-column: 2 / 3;
         grid-row: 3 / 4;
-        align-self: center;
+        align-self: end;
         justify-self: start;
+        padding-left: .3em;
+        padding-bottom: 2em;
     }
+    /*---events page---*/
+
+    textarea {
+        width: 800px;
+        height: 400px;
+    }
+    /*---newbikes page---*/
+    #newbike .subhead p {
+        font-size: 35px;
+    }
+    #contactus .subhead {
+        align-self: center;
+        margin-top: 10em;
+    }
+
 }
