@@ -195,7 +195,7 @@
 #excursions .divider1 {
     grid-column: 1 / 3;
     grid-row: 1 / 2;
-    height: 5em;
+    height: 3em;
 }
 .tourinfo {
     grid-column: 1 / 3;
@@ -218,6 +218,9 @@
     grid-column: 2 / 3;
     grid-row: 3 / 4;
 }
+    #touring .subhead p {
+        font-size: 30px;
+    }
     /*---events page---*/
     #joinin h3 {
         font-size: 20px;
@@ -226,6 +229,9 @@
     textarea {
         width: 600px;
         height: 400px;
+    }
+    #divideinfo .subhead p{
+        font-size: 30px;
     }
     /*new bike page*/
     #newbike .subhead {
@@ -253,7 +259,7 @@
         padding-left: .3em;
     }
     /*--service page--*/
-    #service .subhead {
+    #service .subhead p {
         font-size: 25px;
     }
     #service h4 {

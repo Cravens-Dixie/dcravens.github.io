@@ -23,13 +23,14 @@
 
     <body>
         <header>
-            <!-- Logo-->
-            <figure></figure>
-            <h1>The Mountain Spoke</h1>
-            <div class="subheading">Cycling Bozeman Style</div>
-
-
-            <nav class="mainNav">
+            <figure class="logo">
+                <img src="images/tms-logo.png" alt="logo"srcset="images/mts-logo-1x.png 1x, images/mts-logo-2x.png 2x, images/mts-logo-3x.png 3x">
+            </figure>
+            <div id="mainhead" >
+                <h1 class="tms">The Mountain Spoke</h1>
+                <div class="subheading">Cycling Bozeman Style</div>
+            </div>
+            <nav class="clearfix" id="mainNav">
                 <button onclick="toggleNavMenu()">&#9776;</button>
                 <ul id="navigation" class="hide">
                     <li><a href="index.html">Home</a></li>
@@ -44,12 +45,14 @@
 
         <main id="divideinfo" class="grid4">
             <div class="subhead">
-                <p>The adventure starts July 25, 2018!</p>
+                <p>The Adventure Starts July 25, 2018!</p>
             </div>
             <img class="greatdiv" src="images/great-divide-ride.jpg" alt="ride the great divide">
         </main>
         <section id="joinin">
-            <hr class="divline">
+            <div class="divider1">
+                <h2> Upcoming Events </h2>
+            </div>
             <h3>Ride the longest off-pavement route in the world.</h3>
             <p id="gdmb">The Great Divide Mountain Bike Route (GDMBR) is Adventure Cycling's premier off-pavement cycling route, crisscrossing the Continental Divide north to south. This route is defined by the word "remote." Its remoteness equates with spectacular terrain and scenery. The entire route is basically dirt-road and mountain-pass riding every day. In total, it has over 200,000 feet of elevation gain. Roughly 80% of it is composed of county, Forest Service (USFS), and Bureau of Land Management (BLM) dirt and gravel roads. The remainder is made up of four-wheel-drive tracks and singletrack trails (10%), and paved roads (10%). See <a href="https://www.adventurecycling.org/routes-and-maps/adventure-cycling-route-network/great-divide-mountain-bike-route/">Adventure Cycling's website</a> for all the details, including maps of the full route.
             </p>

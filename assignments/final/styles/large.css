@@ -35,19 +35,29 @@
         padding-left: .3em;
         padding-bottom: 2em;
     }
+    /*--adventure tours page--*/
+    #touring .subhead p {
+        font-size: 40px;
+    }
     /*---events page---*/
 
     textarea {
         width: 800px;
         height: 400px;
     }
+    #divideinfo .subhead p{
+        font-size: 40px;
+    }
     /*---newbikes page---*/
     #newbike .subhead p {
-        font-size: 35px;
+        font-size: 40px;
     }
     #contactus .subhead {
         align-self: center;
 
     }
-
+/*--service page--*/
+    #service .subhead p {
+        font-size: 35px;
+    }
 }
