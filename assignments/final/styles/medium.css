@@ -179,8 +179,9 @@
     .newinfo h3 {
         font-size: 25px;
     }
-    .newinfo p {
+    #bikeinfo p {
         font-size: 20px;
+        margin-bottom: 0;
     }
     .salesinfo p{
         font-size: 18px;
@@ -272,7 +273,7 @@
         font-size: 35px;
     }
     #contactus .subhead {
-        align-self: start;
+        align-self: center;
 
     }
     #contactus h4 {

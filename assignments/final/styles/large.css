@@ -49,6 +49,11 @@
         font-size: 40px;
     }
     /*---newbikes page---*/
+    .grid6 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 0;
+    }
     #newbike .grid5 {
         display: grid;
         grid-template-columns: 1fr 1fr;

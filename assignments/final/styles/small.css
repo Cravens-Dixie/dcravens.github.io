@@ -160,6 +160,13 @@ footer {
     grid-row: 1 / 3;
 
 }
+#mainpic span  {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: 1;
+    align-self: end;
+    justify-self: end;
+}
 #overlay {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -244,9 +251,16 @@ footer {
 }
 .bikemain {
     grid-column: 1 / 3;
-    grid-row:2 / 4;
+    grid-row: 2 / 4;
     width: 100%;
     z-index: -1;
+}
+#brands span  {
+    grid-column: 1 / 3;
+    grid-row: 2 / 4;
+    z-index: 1;
+    align-self: end;
+    justify-self: end;
 }
 h2.bikebr {
     text-align: left;
@@ -290,6 +304,8 @@ footer {
 .grid5 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr auto;
+    grid-gap: 0;
 
 }
 #excursions .divider1 {
@@ -433,6 +449,9 @@ h3.bikebrands {
     grid-row: 3 / 4;
     z-index: 1;
 }
+#bikeinfo p {
+    margin-bottom: 0;
+}
 
 /* Service page and table */
 #service .subhead {
@@ -449,6 +468,19 @@ h3.bikebrands {
     grid-column: 1 / 3;
     grid-row: 1 / 3;
     z-index: -1;
+}
+#service span  {
+    grid-column: 1 / 3;
+    grid-row: 1 / 3;
+    z-index: 1;
+    align-self: end;
+    justify-self: end;
+}
+#service .newinfo {
+    grid-column: 1 / 3;
+    grid-row: 3 / 4;
+    z-index: 1;
+
 }
 
 
