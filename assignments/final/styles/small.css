@@ -166,7 +166,10 @@ footer {
     z-index: 1;
     align-self: end;
     justify-self: end;
+    font-size: 8px;
+
 }
+
 #overlay {
     grid-column: 1 / 2;
     grid-row: 1 / 3;
@@ -261,6 +264,7 @@ footer {
     z-index: 1;
     align-self: end;
     justify-self: end;
+    font-size: 8px;
 }
 h2.bikebr {
     text-align: left;
@@ -475,6 +479,7 @@ h3.bikebrands {
     z-index: 1;
     align-self: end;
     justify-self: end;
+    font-size: 8px;
 }
 #service .newinfo {
     grid-column: 1 / 3;
