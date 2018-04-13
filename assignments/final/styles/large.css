@@ -26,7 +26,7 @@
         padding-left: .3em;
     }
     .list {
-        align-self: start;
+
         margin: 5px 200px 10px 0px;
     }
     #brands .list a {
@@ -39,7 +39,6 @@
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         align-self: center;
-        justify-self: start;
         padding-left: 1em;
     }
 

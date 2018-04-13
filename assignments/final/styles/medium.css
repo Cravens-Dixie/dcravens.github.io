@@ -113,13 +113,13 @@
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
-        align-items: end;
+
         grid-gap: 0;
     }
     .homepage {
         grid-column: 1 / 3;
         grid-row: 1 / 2;
-        align-self: end;
+
         color: #13171a;
         z-index: 2;
         margin: 0;
@@ -134,23 +134,23 @@
         grid-column: 1 / 3;
         grid-row: 1 / 3;
         width: 100%;
-        align-self: start;
+
 
     }
     .divider {
         grid-column: 2 / 3;
         grid-row: 2 / 3;
-        align-self: start;
+
         margin-top: .5em;
         font-size: 25px;
         z-index: 2;
-        background-color: clear;
+
     }
     .btnbikes {
         grid-column: 1 / 2;
         grid-row: 3 / 4;
         align-self: center;
-        justify-self: start;
+
         padding-bottom: 0em;
     }
     #brands a {
@@ -182,7 +182,7 @@
         font-size: 30px;
     }
     .bikebrands {
-        background-color: clear;
+
         font-size: 50px;
     }
     /*---New Bikes Page---*/
@@ -214,7 +214,7 @@
 .tourinfo {
     grid-column: 1 / 3;
     grid-row: 2 / 3;
-    align-self: end;
+
     color: #49535c;
     /*background-color: rgba(73, 83, 92, .6);*/
     margin-top: 0;
