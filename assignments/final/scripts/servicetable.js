@@ -5,14 +5,12 @@ request.open('GET', requestURL, true);
 request.send();
 request.onload = function() {
 
-    alert(request.responseText);
-
     var tablePrices = JSON.parse(request.responseText);
-    var safetyCheck = tablePrices.prices[0];
-    var tuneUp = tablePrices.prices.proTuneUp;
-    var tuneClean = tablePrices.prices.proTuneUpClean;
-    var wheelService = tablePrices.prices.wheelService;
-    var suspenService = tablePrices.prices.suspensionService;
+    var safetyCheck = tablePrices.safetyCheck;
+    var tuneUp = tablePrices.proTuneUp;
+    var tuneClean = tablePrices.proTuneUpClean;
+    var wheelService = tablePrices.wheelService;
+    var suspenService = tablePrices.suspensionService;
 
     document.getElementById("safety").innerHTML = safetyCheck;
     document.getElementById("protune").innerHTML = tuneUp;
