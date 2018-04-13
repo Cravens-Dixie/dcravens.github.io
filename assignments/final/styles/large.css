@@ -16,25 +16,34 @@
     div.subheading {
         padding-right: 9em;
     }
+    .btn1 {
+        font-size: 35px;
+
+    }
+
     #brands .subhead {
         font-size: 30px;
         padding-left: .3em;
     }
     .list {
         align-self: start;
-        font-size: 24px;
         margin: 5px 200px 10px 0px;
-
-
+    }
+    #brands .list a {
+        font-size: 30px;
+    }
+    h3.favbikes {
+        font-size: 30px;
     }
     .btnbikes {
-        grid-column: 2 / 3;
+        grid-column: 1 / 2;
         grid-row: 3 / 4;
-        align-self: end;
+        align-self: center;
         justify-self: start;
-        padding-left: .3em;
-        padding-bottom: 2em;
+        padding-left: 1em;
     }
+
+
     /*--adventure tours page--*/
     #touring .subhead p {
         font-size: 40px;
