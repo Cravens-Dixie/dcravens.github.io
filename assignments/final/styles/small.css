@@ -39,14 +39,15 @@ nav button {
 }
 nav ul {
     list-style-type: none;
-    padding: 0;
+    padding: .1em
+        ;
     margin: 0;
 }
 nav ul li a {
     display: block;
     padding: .8rem 2%;
     text-decoration: none;
-    color: #13171a; /*rgba(255,255,255,0.8);*/
+    color: #13171a;
     border-top: 1px solid rgba(0,0,0,0.3);
 }
 
@@ -84,7 +85,7 @@ a {
 }
 
 /*---buttons---*/
-.btn1 button, #tours button, #brands button, #event button {
+ button, #tours button, #brands button, #event button {
     margin: 4px 2px;
     background-color: #13171a;
     color:  #e7b401;
