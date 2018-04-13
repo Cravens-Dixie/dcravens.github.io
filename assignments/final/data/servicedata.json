@@ -1,18 +1,7 @@
 {
-    "prices": [{
-        "safetyCheck": 40
-    },
-    {
-         "proTuneUp": 60
-    },
-    {
-        "proTuneUpClean": 90
-    },
-    {
-        "wheelService": 15
-    },
-    {
-        "suspensionService": 50
-    }
-  ]
+    "safetyCheck": 40,
+    "proTuneUp": 60,
+    "proTuneUpClean": 90,
+    "wheelService": 15,
+    "suspensionService": 50
 }
