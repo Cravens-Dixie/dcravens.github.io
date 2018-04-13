@@ -449,7 +449,7 @@ h3.bikebrands {
     grid-row: 3 / 4;
     z-index: 1;
 }
-#bikeinfo p {
+.bikeinfo p {
     margin-bottom: 0;
 }
 

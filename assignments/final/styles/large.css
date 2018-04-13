@@ -82,7 +82,7 @@
         grid-column: 1 / 2;
 
     }
-    #bikeinfo {
+    .bikeinfo {
         grid-column: 2 / 3;
 
     }
